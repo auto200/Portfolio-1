@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+  :root{
+    --bgDark:#15202b;
+    --black:#000;
+    --headingDark:#0a58ca;
+    --hrColorDark:#24384b;
+
+    --bgLight:#e0e0e0;
+    --white:#cecdcd;
+    --headingLight:#055160;
+    --hrColorLight:#c4c6c7;
+  }
+
+    #root.light{
+    --background: var(--bgLight);
+    --text: var(--black);
+    --headingColor:var(--headingLight);
+    --headingColorShadow:var(--headingDark);
+    --hrColor:var(--hrColorLight);
+  }
+
+  #root.dark{
+    --background: var(--bgDark);
+    --text:  var(--white);
+    --headingColor:var(--headingDark);
+    --headingColorShadow:var(--headingLight);
+    --hrColor:var(--hrColorDark);
+  }
+
+/* RWD SIZE */
+$tablet:700px;
+$bigtablet:992px;
+$laptop:1200px;
+$desktop:1600px;
+
+/* FONT */
+$generalFont:'Roboto';
+$headlineFontBold:'Montserrat Alternates';
+$headlineFont:'Otomanopee One';
+$descriptionFont:'Inconsolata';

@@ -1,0 +1,43 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import "./component/variables";
+@import './component/functions';
+
+#root{
+  box-sizing: inherit;
+  font-family: $generalFont;
+  background-color: var(--background);
+  transition: background .3s ease-in-out, color .6s ease-in-out;
+  -webkit-transition: background .3s ease-in-out, color .6s ease-in-out;
+  -moz-transition: background .3s ease-in-out, color .6s ease-in-out;
+  -ms-transition: background .3s ease-in-out, color .6s ease-in-out;
+  -o-transition: background .3s ease-in-out, color .6s ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.row {
+  @include flexCenter();
+  .hr {
+    margin-top: 1em;
+    width: 80%;
+    height: 1px;
+    background-color: var(--hrColor);
+    opacity: 0.5;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+.h1{
+  @include flexCenter();
+  font-family: $headlineFontBold;
+  color:var(--headingColor);
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+}

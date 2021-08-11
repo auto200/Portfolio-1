@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../functions.scss";
+
+:root{
+    --bgScrollBarLight:#c4c6c7;
+    --bgIndicatorLight:linear-gradient(to right , #055160 , #00b7db);
+
+    --bgScrollBarDark:#24384b;
+    --bgIndicatorDark:linear-gradient(to right , #0a58ca , #083981);
+}
+
+#root.light{
+    --bgScrollBar:var(--bgScrollBarLight);
+    --bgIndicator:var(--bgIndicatorLight);
+}
+
+#root.dark{
+    --bgScrollBar:var(--bgScrollBarDark);
+    --bgIndicator:var(--bgIndicatorDark);
+}
+
+.scroll-bar,
+.scroll-bar__indicator{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.scroll-bar{
+    background-color: var(--bgScrollBar);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 5px;
+
+    &__indicator{
+        background: var(--bgIndicator);
+        transform-origin: top right;
+        height: 6px;
+    }
+}

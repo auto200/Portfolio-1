@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../functions.scss";
+
+:root{
+    --bgButtonLight:#b9b9b9;
+
+    --bgButtonDark:#1f2f3f;
+}
+
+#root.light{
+    --bgButton:var(--bgButtonLight);
+}
+
+#root.dark{
+    --bgButton:var(--bgButtonDark);
+}
+
+.button-scroll-up{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+    bottom: 30px;
+    background-color: var(--bgButton);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    &:hover .button-scroll-up__icon{
+        scale: 1.2;
+    }
+
+    &__icon{
+        color: #fff;
+        @include flexCenter();
+        margin-top: 4px;
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    }
+}

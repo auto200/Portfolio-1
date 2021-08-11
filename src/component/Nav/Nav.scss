@@ -1,0 +1,106 @@
+@import "../variables";
+@import "../functions.scss";
+
+ :root{
+  --bgButtonNavDark:#1b2938;
+  --colorNavDark:#b4d1ab;
+  --borderNavDark:#043e49;
+  --bgHoverNavDark:#2c4758;
+
+  --bgButtonNavLight:#fff;
+  --colorNavLight:#687864;
+  --borderNavLight:#087990;
+  --bgHoverNavLight:#5b97bd;
+}
+
+#root.light{
+  --bgButtonNav:var(--bgButtonNavLight);
+  --colorNav:var(--colorNavLight);
+  --borderNav:var(--borderNavLight);
+  --bgHoverNav:var(--bgHoverNavLight);
+}
+
+#root.dark{
+  --bgButtonNav:var(--bgButtonNavDark);
+  --colorNav:var(--colorNavDark);
+  --borderNav:var(--borderNavDark);
+  --bgHoverNav:var(--bgHoverNavDark);
+}
+
+.language-switch {
+  margin-right: 0.5em;
+  width: 5em;
+
+  &:hover &__label{
+    scale: 1.2;
+  }
+
+  &:hover &__icon{
+    scale: 2;
+  }
+
+  &__label{
+    padding-right: 0.6em;
+    font-weight: 700;
+    transition: all .1s ease-in-out  ;
+    -webkit-transition: all .1s ease-in-out  ;
+    -moz-transition: all .1s ease-in-out  ;
+    -ms-transition: all .1s ease-in-out  ;
+    -o-transition: all .1s ease-in-out  ;
+}
+
+  &__icon {
+    @include flexCenter();
+    scale: 1.8;
+    transition: all .1s ease-in-out  ;
+    -webkit-transition: all .1s ease-in-out  ;
+    -moz-transition: all .1s ease-in-out  ;
+    -ms-transition: all .1s ease-in-out  ;
+    -o-transition: all .1s ease-in-out  ;
+}
+}
+
+.theme-switch {
+  width: 3em;
+
+  &:hover &__icon {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+
+  &__icon {
+    @include flexCenter();
+    transition: all .3s linear ;
+  }
+}
+
+.action-button {
+  padding: 0.3em 0.6em;
+  background-color: var(--bgButtonNav);
+  border-radius: 1px;
+  color: var(--colorNav);
+  border: 1px solid var(--borderNav);
+  box-shadow: 0 3px 6px $black ;
+  outline: none;
+  transition: all 0.2s linear;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+
+  &:hover{
+    background-color: var(--bgHoverNav);
+    color: $white;
+  }
+
+  &:active {
+    scale: 0.9;
+  }
+}
