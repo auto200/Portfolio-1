@@ -2,7 +2,9 @@
 
 ## LIVE: https://margulwb.github.io/Portfolio/
 
-### Sources pictire: -https://pixabay.com/photos/laptop-coffee-workspace-flat-lay-1209008/ -https://pixabay.com/photos/computer-screen-coding-1209641/
+### Sources pictire: 
+* https://pixabay.com/photos/laptop-coffee-workspace-flat-lay-1209008/ 
+* https://pixabay.com/photos/computer-screen-coding-1209641/
 
 ### This project learn me:
 * practical use of React
