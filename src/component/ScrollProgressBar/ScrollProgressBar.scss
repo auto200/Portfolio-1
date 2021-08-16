@@ -2,20 +2,17 @@
 @import "../functions.scss";
 
 :root{
-    --bgScrollBarLight:#c4c6c7;
     --bgIndicatorLight:linear-gradient(to right , #055160 , #00b7db);
-
-    --bgScrollBarDark:#24384b;
     --bgIndicatorDark:linear-gradient(to right , #0a58ca , #083981);
 }
 
 #root.light{
-    --bgScrollBar:var(--bgScrollBarLight);
+    --bgScrollBar:var(--bgSecound);
     --bgIndicator:var(--bgIndicatorLight);
 }
 
 #root.dark{
-    --bgScrollBar:var(--bgScrollBarDark);
+    --bgScrollBar:var(--bgSecound);
     --bgIndicator:var(--bgIndicatorDark);
 }
 

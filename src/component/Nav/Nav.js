@@ -1,25 +1,21 @@
 import './Nav.scss'
-import { FaLanguage } from "react-icons/fa";
-import { ChangeTheme } from "../ChangeTheme";
+import { ThemeButton } from "./ThemeButton";
+import { Menu } from './Menu';
+import { MenuMobile } from './MenuMobile';
+import LanguageButton from './LanguageButton';
 
-export  function Nav(props) {
-    return <>
-     <nav className='row pt-2 nav-bar'>
-            <div className="col d-flex justify-content-end">
-                <button onClick={props.switchLanguagecallback}
-                className="action-button language-switch d-flex justify-content-around">
-                    <div className="language-switch__label">
-                        {props.language}
-                    </div>
-                    <div className="language-switch__icon">
-                        <FaLanguage/>
-                    </div>
-                </button>
-                <ChangeTheme/>
+export  function Nav({language, switchLanguagecallback}) {
+    return  <div className='row pt-2 nav-bar'>
+
+                <div className="col d-flex justify-content-start">
+                    <Menu/>
+                    <MenuMobile/>
+                </div>
+
+                <div className="col d-flex justify-content-end">
+                    <LanguageButton language={language} callback={switchLanguagecallback}/>
+                    <ThemeButton/>
+                </div>
+
             </div>
-        </nav>
-        <div className="row">
-                <div className='hr'/>
-        </div>
-        </>
 }

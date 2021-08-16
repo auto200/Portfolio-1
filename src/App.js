@@ -11,17 +11,15 @@ import { ScrollProgressBar } from "./component/ScrollProgressBar/ScrollProgressB
 export default function App() {
   const [languagePage , setLanguagePage] = useState('PL')
   const [contentPage , setContentPage ] = useState(SwitchLanguage('EN'))
-  const [animateLanguage , setAnimateLanguage] = useState(false)
 
     const handleSwitchLanguage = () =>{
-        setAnimateLanguage(!animateLanguage)
         setLanguagePage(languagePage === 'EN' ? 'PL' : 'EN')
         setContentPage(SwitchLanguage(languagePage))
     }
 
   return  <div className='container-xxl'>
             <ScrollProgressBar/>
-            <Nav switchLanguagecallback={handleSwitchLanguage} language={languagePage} animate={animateLanguage}/>
+            <Nav switchLanguagecallback={handleSwitchLanguage} language={languagePage}/>
             <AboutMe content={contentPage.aboutMe}/>
             <TechStack content={contentPage.techStack}/>
             <MyProject content={contentPage.myProject}/>

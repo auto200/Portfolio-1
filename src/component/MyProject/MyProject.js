@@ -22,11 +22,11 @@ export function MyProject(props) {
     ]
 
     return (
-        <div className='row mt-5'>
+        <div className='row mt-5 pt-3' id='my-projects'>
             <div className="row">
                 <h1 className="h1">{props.content.heading}</h1>
             </div>
-            <div className="row">
+            <div className="row d-flex justify-content-center">
                 <GetProject projects={myProject}/>
             </div>
         </div>

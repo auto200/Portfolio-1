@@ -2,14 +2,16 @@
 
   :root{
     --bgDark:#15202b;
+    --bgSecoundDark:#1f2f3f;
     --black:#000;
     --headingDark:#0a58ca;
-    --hrColorDark:#24384b;
+    --h2ColorDark:#1573ff;
 
     --bgLight:#e0e0e0;
+    --bgSecoundLight:#b9b9b9;
     --white:#cecdcd;
     --headingLight:#055160;
-    --hrColorLight:#c4c6c7;
+    --h2ColorLight:#0aa2c0;
   }
 
     #root.light{
@@ -18,6 +20,7 @@
     --headingColor:var(--headingLight);
     --headingColorShadow:var(--headingDark);
     --hrColor:var(--hrColorLight);
+    --bgSecound:var(--bgSecoundLight);
   }
 
   #root.dark{
@@ -26,10 +29,11 @@
     --headingColor:var(--headingDark);
     --headingColorShadow:var(--headingLight);
     --hrColor:var(--hrColorDark);
+    --bgSecound:var(--bgSecoundDark);
   }
 
 /* RWD SIZE */
-$tablet:700px;
+$tablet:770px;
 $bigtablet:992px;
 $laptop:1200px;
 $desktop:1600px;

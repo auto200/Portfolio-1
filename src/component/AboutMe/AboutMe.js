@@ -11,6 +11,7 @@ export function AboutMe(props) {
                     className='about-me__img img-fluid shadow-lg'/>
                 </div>
             </div>
+
             <div className="col-sm col-md about-me__text p-5 d-flex flex-column">
                 <div className="about-me__headline shadow-lg mb-3 fs-1 p-1">
                     {props.content.heading}

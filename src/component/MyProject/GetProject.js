@@ -1,12 +1,12 @@
 import React from 'react'
 import { GetBackground } from "./GetBackground";
 import { FaGithub } from "react-icons/fa";
-import { RiLiveLine } from 'react-icons/ri'
+import { RiLiveLine, RiArrowRightCircleFill } from 'react-icons/ri'
 
 export  function GetProject(props) {
     return <>
             {props.projects.map(({id, name, liveLink, githube})=>
-                <div key={id} className="col-lg-6  row project-box">
+                <div key={id} className="col-md-6 row project-box">
                     <div className="project-box__name mt-3">
                         <h2 className='project-box__name-h2'>
                             {name}
@@ -25,6 +25,9 @@ export  function GetProject(props) {
                         <a href={liveLink}>
                             {GetBackground(name)}
                         </a>
+                        <div className="project-box__hyperlink--icon">
+                            <RiArrowRightCircleFill/>
+                        </div>
                     </div>
                 </div>
             )}

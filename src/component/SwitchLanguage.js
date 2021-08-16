@@ -3,13 +3,19 @@ export function SwitchLanguage(language) {
         en:{
             aboutMe:{
                 heading:"Hi, I'm Maciek",
-                aFewWordAboutMe:"I am an ambitious 20 year old who wants to become a front-end developer. I'd like to work on a big project. I’ve always been curious about games and how work apps  and how they are developed. I approach programming as a hobby",
+                aFewWordAboutMe:
+                <>
+                    <p>I am an ambitious 20 years old who wants to become the best Front-End developer.</p>
+                    <p>I've always been curious about how games and apps work with a main interest on how the development process looks like.</p>
+                    <span>Creating pages from a visual point of view is not my strong point,
+                        because my favorite part of creating a page is logic in JS.</span>
+                </>,
             },
             techStack:{
                 heading:"Tech Stack",
             },
             myProject:{
-                heading:"My Project",
+                heading:"My Projects",
             },
             footer:{
                 heading:"Contact",
@@ -18,7 +24,14 @@ export function SwitchLanguage(language) {
         pl:{
             aboutMe:{
                 heading:"Cześć, tutaj Maciek",
-                aFewWordAboutMe:"Jestem ambitnym 20-latkiem, który chce zostać front-end developerem. Chciałbym pracować w dużym projektem. Zawsze ciekawiły mnie gry, jak działają aplikacje oraz jak sie je tworzy. Programowanie traktuję jako hobby",
+                aFewWordAboutMe:
+                <>
+                    <p>Jestem ambitnym 20 latkiem, który chce zostać najlepszym Front-End developerem.</p>
+                    <p>Zawsze byłem ciekaw jak działają gry i aplikacje, a najbardziej
+                        interesowało mnie jak wygląda proces ich tworzenia.</p>
+                    <span>Tworzenie stron z wizualnego punktu widzenia nie jest moją
+                        mocną stroną, ponieważ moją ulubioną częścią tworzenia stron jest logika w JS.</span>
+                </>,
             },
             techStack:{
                 heading:"Poznane Technologie",

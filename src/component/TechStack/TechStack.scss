@@ -1,19 +1,6 @@
 @import "../variables";
 @import "../functions.scss";
 
- :root{
-    --bgTechStackLight:#ececec;
-    --bgTechStackDark:#1a2735;
-}
-
-#root.light{
-    --bgTechStack:var(--bgTechStackLight);
-}
-
-#root.dark{
-    --bgTechStack:var(--bgTechStackDark);
-}
-
 .technologies{
     @include flexCenter();
     flex-wrap: wrap;
@@ -25,23 +12,6 @@
         flex-direction: column;
         transition: all .1s ease-in-out;
         padding: 0 3em;
-
-        &:hover{
-            border-radius: 10px;
-            background-color: var(--bgTechStack);
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-        }
-
-        &:hover .technologies__icon{
-            transform: rotate(10deg);
-            -webkit-transform: rotate(10deg);
-            -moz-transform: rotate(10deg);
-            -ms-transform: rotate(10deg);
-            -o-transform: rotate(10deg);
-}
     }
 
     &__icon{

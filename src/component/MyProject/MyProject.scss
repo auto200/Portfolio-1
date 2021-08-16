@@ -1,29 +1,19 @@
 @import "../variables";
 @import "../functions.scss";
 
-    :root{
-        --githubeColorLight:#000;
-        --h2ColorLight:#0aa2c0;
-        --borderProjectLight:#cdc;
+#root.light{
+    --githubeColor:var(--black);
+    --h2Color:var(--h2ColorLight);
+    --borderProject:var(--white);
+    --liveColor:var(--liveColorLight);
+}
 
-        --githubeColorDark:#fff;
-        --h2ColorDark:#0d6efd;
-        --borderProjectDark:#000;
-    }
-
-    #root.light{
-        --githubeColor:var(--githubeColorLight);
-        --h2Color:var(--h2ColorLight);
-        --borderProject:var(--borderProjectLight);
-        --liveColor:var(--liveColorLight);
-    }
-
-    #root.dark{
-        --githubeColor:var(--githubeColorDark);
-        --h2Color:var(--h2ColorDark);
-        --borderProject:var(--borderProjectDark);
-        --liveColor:var(--liveColorDarak);
-    }
+#root.dark{
+    --githubeColor:var(--white);
+    --h2Color:var(--h2ColorDark);
+    --borderProject:var(--black);
+    --liveColor:var(--liveColorDarak);
+}
 
 .project-box{
     @include flexCenter();
@@ -31,18 +21,20 @@
      &__name{
         &-h2{
             display: flex;
-            align-self: center;
+            justify-content: center;
             font-family: $headlineFontBold;
             color: var(--h2Color);
 
             &--githube,
             &--live{
-                padding:0 .5em;
+                @include flexCenter();
+                margin:0 .5em;
                 transition: all .3s ease-in-out;
                 -webkit-transition: all .3s ease-in-out;
                 -moz-transition: all .3s ease-in-out;
                 -ms-transition: all .3s ease-in-out;
                 -o-transition: all .3s ease-in-out;
+
                 &:hover{
                     transform: rotate(360deg);
                     -webkit-transform: rotate(360deg);
@@ -63,27 +55,49 @@
     }
 
     &__hyperlink{
+        text-align: center;
+        position: relative;
+
         &:hover{
             opacity: .8;
         }
+
+        &:hover .project-box__hyperlink--icon{
+            opacity: 1;
+        }
+
         &-img{
             width: 100%;
             height: 100%;
             border: 2px solid var(--borderProject);
         }
+
+        &--icon{
+            @include flexCenter();
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            scale: 3;
+            opacity: 0;
+            color: var(--borderProject);
+        }
+    }
+}
+
+@media (min-width:$tablet){
+    .project-box__name-h2{
+        font-size: 1.4em;
     }
 }
 
 @media (min-width: $bigtablet){
     .project-box__hyperlink{
-        text-align: center;
+
         &-img{
             scale: .9;
         }
     }
-
     .project-box__name-h2{
-        display: flex;
-        justify-content: center;
+        font-size: 1.6em;
     }
 }

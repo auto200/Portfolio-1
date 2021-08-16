@@ -1,20 +1,6 @@
 @import "../variables";
 @import "../functions.scss";
 
-:root{
-    --bgButtonLight:#b9b9b9;
-
-    --bgButtonDark:#1f2f3f;
-}
-
-#root.light{
-    --bgButton:var(--bgButtonLight);
-}
-
-#root.dark{
-    --bgButton:var(--bgButtonDark);
-}
-
 .button-scroll-up{
     cursor: pointer;
     border-radius: 50%;
@@ -24,7 +10,7 @@
     z-index: 10;
     right: 30px;
     bottom: 30px;
-    background-color: var(--bgButton);
+    background-color: var(--bgSecound);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
