@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.87e1a5c2.chunk.css",
-    "main.js": "/Portfolio/static/js/main.593ee6b6.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.593ee6b6.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.7778fa8a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.928c38cb.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.928c38cb.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c74a019d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c74a019d.js.map",
     "static/css/2.455652b6.chunk.css": "/Portfolio/static/css/2.455652b6.chunk.css",
-    "static/js/2.55a2f6d1.chunk.js": "/Portfolio/static/js/2.55a2f6d1.chunk.js",
-    "static/js/2.55a2f6d1.chunk.js.map": "/Portfolio/static/js/2.55a2f6d1.chunk.js.map",
+    "static/js/2.76499286.chunk.js": "/Portfolio/static/js/2.76499286.chunk.js",
+    "static/js/2.76499286.chunk.js.map": "/Portfolio/static/js/2.76499286.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.455652b6.chunk.css.map": "/Portfolio/static/css/2.455652b6.chunk.css.map",
-    "static/css/main.87e1a5c2.chunk.css.map": "/Portfolio/static/css/main.87e1a5c2.chunk.css.map",
-    "static/js/2.55a2f6d1.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.55a2f6d1.chunk.js.LICENSE.txt",
-    "static/media/AboutMe.scss": "/Portfolio/static/media/bgLight.605b5482.jpg",
-    "static/media/legbook.b09018b5.PNG": "/Portfolio/static/media/legbook.b09018b5.PNG",
-    "static/media/me.f7544b26.JPG": "/Portfolio/static/media/me.f7544b26.JPG",
-    "static/media/quiz.4fe7b560.PNG": "/Portfolio/static/media/quiz.4fe7b560.PNG",
-    "static/media/valorantdamage.7dc73c6f.PNG": "/Portfolio/static/media/valorantdamage.7dc73c6f.PNG"
+    "static/css/main.7778fa8a.chunk.css.map": "/Portfolio/static/css/main.7778fa8a.chunk.css.map",
+    "static/js/2.76499286.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.76499286.chunk.js.LICENSE.txt",
+    "static/media/AboutMe.scss": "/Portfolio/static/media/bgLight.64f1b1b9.jpg",
+    "static/media/legbook.0174e303.PNG": "/Portfolio/static/media/legbook.0174e303.PNG",
+    "static/media/me.6bf1aa58.JPG": "/Portfolio/static/media/me.6bf1aa58.JPG",
+    "static/media/quiz.a1320754.PNG": "/Portfolio/static/media/quiz.a1320754.PNG",
+    "static/media/valorantdamage.133c33b6.PNG": "/Portfolio/static/media/valorantdamage.133c33b6.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.c74a019d.js",
     "static/css/2.455652b6.chunk.css",
-    "static/js/2.55a2f6d1.chunk.js",
-    "static/css/main.87e1a5c2.chunk.css",
-    "static/js/main.593ee6b6.chunk.js"
+    "static/js/2.76499286.chunk.js",
+    "static/css/main.7778fa8a.chunk.css",
+    "static/js/main.928c38cb.chunk.js"
   ]
 }
