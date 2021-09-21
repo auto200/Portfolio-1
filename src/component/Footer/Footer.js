@@ -16,7 +16,7 @@ export function Footer(props) {
                     <a href="mailto:maciejgurgul01@gmail.com" className='footer__link'>
                         <span className="footer__icon"><GoMail/></span> Mail
                     </a>
-                    <a href="mhttps://www.linkedin.com/in/maciej-gurgul-935904213/" className='footer__link'>
+                    <a href="https://www.linkedin.com/in/maciej-gurgul-935904213/" className='footer__link'>
                         <span className="footer__icon"><FaLinkedin/></span> Linkedin
                     </a>
                 </div>
