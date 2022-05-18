@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 ## LIVE: https://margulwb.github.io/Portfolio/
 
 ### Sources pictire: 
